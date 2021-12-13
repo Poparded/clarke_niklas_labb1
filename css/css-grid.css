@@ -1,0 +1,128 @@
+@charset "UTF-8";
+.css-grid__container {
+  display: grid;
+  gap: 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  grid-template-rows: repeat(14, 3rem);
+  grid-template-columns: repeat(4, calc((100% - 4 * 1rem) / 3.5));
+  grid-template-areas:
+    "du du du du"
+    "kan kan kan kan"
+    "css-grid css-grid css-grid css-grid"
+    "child-4 child-4 child-4 child-4"
+    "child-5 child-5 child-5 child-6"
+    "child-7 child-8 child-8 child-8"
+    "child-9 child-9 child-10 child-10"
+    "child-11 child-11 child-11 child-11"
+    "child-12 child-12 child-12 child-12"
+    "child-13 child-13 child-13 child-13"
+    "child-14 child-14 child-14 child-14";
+}
+.css-grid__item {
+  display: grid;
+}
+
+.css-grid__item:nth-child(1) {
+  grid-area: du;
+}
+.css-grid__item:nth-child(2) {
+  grid-area: kan;
+}
+.css-grid__item:nth-child(3) {
+  grid-area: css-grid;
+}
+.css-grid__item:nth-child(4) {
+  grid-area: child-4;
+}
+.css-grid__item:nth-child(5) {
+  grid-area: child-5;
+}
+.css-grid__item:nth-child(6) {
+  grid-area: child-6;
+}
+.css-grid__item:nth-child(7) {
+  grid-area: child-7;
+}
+.css-grid__item:nth-child(8) {
+  grid-area: child-8;
+}
+.css-grid__item:nth-child(9) {
+  grid-area: child-9;
+}
+.css-grid__item:nth-child(10) {
+  grid-area: child-10;
+}
+
+.css-grid__item:nth-child(11) {
+  grid-area: child-11;
+}
+.css-grid__item:nth-child(12) {
+  grid-area: child-12;
+}
+.css-grid__item:nth-child(13) {
+  grid-area: child-13;
+}
+.css-grid__item:nth-child(14) {
+  grid-area: child-14;
+}
+/* .css-grid__item:nth-child(15) {
+  grid-area: child-15;
+}
+ */
+.css-grid__container > div:nth-child(1) {
+  background-color: var(--clr1);
+}
+.css-grid__container > div:nth-child(2) {
+  background-color: var(--clr3);
+}
+.css-grid__container > div:nth-child(3) {
+  background-color: var(--clr2);
+}
+.css-grid__container > div:nth-child(4) {
+  background-color: var(--clr4);
+}
+
+.five-grid {
+  background-color: var(--clr5);
+}
+.six-grid {
+  background-color: var(--clr6);
+}
+.seven-grid {
+  background-color: var(--clr7);
+}
+.eight-grid {
+  background-color: var(--clr8);
+}
+.nine-grid {
+  background-color: var(--clr9);
+}
+.ten-grid {
+  background-color: var(--clr10);
+}
+.eleven-grid {
+  background-color: var(--clr1);
+}
+.twelve-grid {
+  background-color: var(--clr2);
+}
+.thirteen-grid {
+  background-color: var(--clr3);
+}
+.fourteen-grid {
+  background-color: var(--clr4);
+}
+@media screen and (min-width: 750px) {
+  .css-grid__container {
+    display: grid;
+    grid-template-rows: repeat(5, 10rem);
+    grid-template-columns: repeat(5, calc((100% - 4 * 1rem) / 5));
+  }
+  .css-grid__item {
+    display: grid;
+  }
+  
+}
+@media screen and (min-width: 1024px) {
+}

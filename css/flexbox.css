@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.flexbox__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* Ändrar items storlek */
+.flexbox__container > div {
+  padding: 0.7rem 0;
+}
+
+.flexbox__item {
+  flex-basis: 100%;
+}
+/* Färger */
+.flexbox__item:nth-child(1),
+.flexbox__item:nth-child(3),
+.flexbox__item:nth-child(5),
+.flexbox__item:nth-child(7) {
+  background-color: var(--clr1);
+}
+.flexbox__item:nth-child(2) {
+  background-color: var(--clr3);
+}
+.flexbox__item:nth-child(4) {
+  background-color: var(--clr4);
+}
+.flexbox__item:nth-child(6),
+.flexbox__item:nth-child(8) {
+  background-color: var(--clr2);
+}
+.flexbox__item:nth-child(9) {
+  background-color: var(--clr5);
+}
+
+/* Ändrar storlek på flexbox items  */
+
+@media screen and (min-width: 750px) {
+  .flexbox__container {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 12vh;
+  }
+
+  .flexbox__container > div {
+    padding: 2rem 0;
+  }
+  .flexbox__item {
+    flex: 1 1 25%;
+  }
+}
+@media screen and (min-width: 1024px) {
+}
