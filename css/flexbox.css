@@ -44,35 +44,31 @@
     display: flex;
     flex-direction: row;
     height: 12vh;
-    width: auto;
   }
 
   .flexbox__container > div {
-    padding: 1.5rem 0;
+    padding: 2rem 0;
   }
   .flexbox__item {
   }
   .flexbox__item:nth-child(1) {
     flex-basis: calc(25% - 15px);
   }
-  .flexbox__item:nth-child(2) {
-    flex-basis: calc((74% - 15px) - ((0.15rem)) * 2);
-  }
-
+  .flexbox__item:nth-child(2),
   .flexbox__item:nth-child(4),
   .flexbox__item:nth-child(9) {
-    flex-basis: calc((60% - 15px) - ((0.15rem)) * 2);
+    flex-basis: calc(50% - 0.5rem);
   }
 
   .flexbox__item:nth-child(1),
   .flexbox__item:nth-child(3),
   .flexbox__item:nth-child(5),
   .flexbox__item:nth-child(7) {
-    flex-basis: calc((15% - 15px) - ((0.15rem)) * 2);
+    flex-basis: calc(15% - 0.5rem);
   }
   .flexbox__item:nth-child(6),
   .flexbox__item:nth-child(8) {
-    flex-basis: calc((29% - 15px) - ((0.1rem)) * 2);
+    flex-basis: calc(24% - 0.5rem);
   }
   /* DU */
   .flexbox__item:nth-child(1) {
@@ -87,17 +83,10 @@
   }
   /* KAN */
   .flexbox__item:nth-child(4) {
-<<<<<<< HEAD
     order: 8;
   }
   .flexbox__item:nth-child(5) {
     order: 7;
-=======
-    order: 7;
-  }
-  .flexbox__item:nth-child(5) {
-    order: 6;
->>>>>>> 1c1f76b616f5f074b38bb76d4a574f5c99953d76
   }
   .flexbox__item:nth-child(6) {
     order: 6;
@@ -109,27 +98,10 @@
     order: 9;
   }
   .flexbox__item:nth-child(9) {
-    order: 8;
+    order: 7;
   }
 }
 @media screen and (min-width: 1024px) {
-<<<<<<< HEAD
-=======
-
-
-
-  /* DU */
-  .flexbox__item:nth-child(1) {
-    order: 1;
-  }
-  .flexbox__item:nth-child(2) {
-    order: 2;
-  }
-  .flexbox__item:nth-child(3) {
-    order: 3;
-  }
-  /* KAN */
->>>>>>> 1c1f76b616f5f074b38bb76d4a574f5c99953d76
   .flexbox__item:nth-child(4) {
     order: 4;
   }
@@ -140,24 +112,12 @@
     order: 6;
   }
   .flexbox__item:nth-child(7) {
-<<<<<<< HEAD
     order: 8;
   }
   .flexbox__item:nth-child(8) {
     order: 8;
-=======
-    order: 10;
-  }
-  .flexbox__item:nth-child(8) {
-    order: 9;
->>>>>>> 1c1f76b616f5f074b38bb76d4a574f5c99953d76
   }
   .flexbox__item:nth-child(9) {
     order: 8;
   }
-<<<<<<< HEAD
-=======
-}
-
->>>>>>> 1c1f76b616f5f074b38bb76d4a574f5c99953d76
 }
