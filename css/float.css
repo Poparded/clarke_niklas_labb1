@@ -16,6 +16,10 @@ html {
 .main-div {
   background-color: grey;
 }
+.img-du-1 {
+  /*   color: var(--clr3);
+ */
+}
 @media screen and (min-width: 750px) {
   .container-2 {
     width: 50%;
@@ -26,7 +30,11 @@ html {
     height: auto;
     float: right;
   }
-
+  .img-du-1 {
+    padding-bottom: 0.4rem;
+    width: 85%;
+    padding-left: 3rem;
+  }
   .img-kan-2 {
     float: left;
     margin-right: 1rem;

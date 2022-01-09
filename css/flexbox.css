@@ -43,7 +43,6 @@
   .flexbox__container {
     display: flex;
     flex-direction: row;
-    height: 12vh;
   }
 
   .flexbox__container > div {
@@ -64,11 +63,11 @@
   .flexbox__item:nth-child(3),
   .flexbox__item:nth-child(5),
   .flexbox__item:nth-child(7) {
-    flex-basis: calc(15% - 0.5rem);
+    flex-basis: calc(17% - 0.5rem);
   }
   .flexbox__item:nth-child(6),
   .flexbox__item:nth-child(8) {
-    flex-basis: calc(24% - 0.5rem);
+    flex-basis: calc(25% - 0.5rem);
   }
   /* DU */
   .flexbox__item:nth-child(1) {
@@ -76,34 +75,53 @@
   }
   .flexbox__item:nth-child(2) {
     order: 2;
-    flex-basis: calc(59% - 0.5rem);
+    flex-basis: calc(68% - 0.5rem);
   }
   .flexbox__item:nth-child(3) {
     order: 3;
   }
   /* KAN */
   .flexbox__item:nth-child(4) {
-    order: 8;
+    order: 7;
+    flex-basis: calc(60% - 0.5rem);
   }
   .flexbox__item:nth-child(5) {
-    order: 7;
-  }
-  .flexbox__item:nth-child(6) {
     order: 6;
   }
+  .flexbox__item:nth-child(6) {
+    order: 5;
+  }
   .flexbox__item:nth-child(7) {
-    order: 8;
+    order: 10;
   }
   .flexbox__item:nth-child(8) {
     order: 9;
   }
   .flexbox__item:nth-child(9) {
-    order: 7;
+    order: 8;
+    flex-basis: calc(60% - 0.5rem);
   }
 }
 @media screen and (min-width: 1024px) {
+  /* .flexbox__item:nth-child(1) {
+    border-radius: 15px 0 0 0;
+    border-color: var(--clr8) !important;
+    border-top: solid 20px;
+    border-left: solid 20px;
+  } */
+  /*  .flexbox__item:nth-child(9) {
+    border-radius: 0 0 15px 0;
+    border-color: var(--clr8) !important;
+    border-bottom: solid 20px;
+    border-right: solid 20px;
+  } */
+  .flexbox__item:nth-child(2) {
+    flex-basis: calc(70% - 0.5rem);
+  }
+
   .flexbox__item:nth-child(4) {
     order: 4;
+    flex-basis: calc(58% - 0.5rem);
   }
   .flexbox__item:nth-child(5) {
     order: 5;
@@ -119,5 +137,25 @@
   }
   .flexbox__item:nth-child(9) {
     order: 8;
+    flex-basis: calc(58% - 0.5rem);
+  }
+  .flexbox__item:nth-child(1) {
+    flex-basis: calc(25% - 15px);
+  }
+  /*  .flexbox__item:nth-child(2),
+  .flexbox__item:nth-child(4),
+  .flexbox__item:nth-child(9) {
+    flex-basis: calc(50% - 0.5rem);
+  } */
+
+  .flexbox__item:nth-child(1),
+  .flexbox__item:nth-child(3),
+  .flexbox__item:nth-child(5),
+  .flexbox__item:nth-child(7) {
+    flex-basis: calc(16% - 0.5rem);
+  }
+  .flexbox__item:nth-child(6),
+  .flexbox__item:nth-child(8) {
+    flex-basis: calc(28% - 0.5rem);
   }
 }
