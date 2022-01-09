@@ -137,7 +137,7 @@
   .css-grid__container {
     display: grid;
     grid-template-rows: repeat(4, 7rem);
-    grid-template-columns: repeat(7, calc((100% - 4 * 0.5rem) / 5.8));
+    grid-template-columns: repeat(7, calc((100% - 4 * 0.9rem) / 5.7));
     grid-template-areas:
       "child-5 du du du kan kan"
       "child-6 du du du child-4 child-4"
