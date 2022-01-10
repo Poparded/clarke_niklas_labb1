@@ -4,13 +4,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.2rem;
+  gap: 0.1rem;
   text-transform: uppercase;
   text-align: center;
 }
 /* Ändrar items storlek */
 .flexbox__container > div {
-  padding: 0.7rem 0;
+  padding: 1.1rem 0;
 }
 
 .flexbox__item {
@@ -103,18 +103,18 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  /* .flexbox__item:nth-child(1) {
+  .flexbox__item:nth-child(1) {
     border-radius: 15px 0 0 0;
     border-color: var(--clr8) !important;
     border-top: solid 20px;
     border-left: solid 20px;
-  } */
-  /*  .flexbox__item:nth-child(9) {
+  }
+  .flexbox__item:nth-child(9) {
     border-radius: 0 0 15px 0;
     border-color: var(--clr8) !important;
     border-bottom: solid 20px;
     border-right: solid 20px;
-  } */
+  }
   .flexbox__item:nth-child(2) {
     flex-basis: calc(70% - 0.5rem);
   }
