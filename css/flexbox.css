@@ -113,7 +113,7 @@
     border-radius: 0 0 50px 0;
     border-color: hsl(182, 52%, 42%) !important;
     border-bottom: solid 30px;
-    border-right: solid 30px;
+    border-right: solid 31px;
   }
   .flexbox__item:nth-child(2) {
     flex-basis: calc(70% - 0.5rem);
