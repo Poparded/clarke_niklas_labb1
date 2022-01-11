@@ -4,13 +4,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.1rem;
   text-transform: uppercase;
   text-align: center;
 }
 /* Ändrar items storlek */
 .flexbox__container > div {
   padding: 1.1rem 0;
+  margin: 3px;
 }
 
 .flexbox__item {
@@ -36,6 +36,11 @@
 .flexbox__item:nth-child(9) {
   background-color: var(--clr5);
 }
+.flexbox__item--shadow {
+  box-shadow: var(--clr7);
+  font-size: 2rem;
+  font-weight: 600;
+}
 
 /* Ändrar storlek på flexbox items  */
 
@@ -46,17 +51,15 @@
   }
 
   .flexbox__container > div {
-    padding: 2rem 0;
+    padding: 1rem;
   }
   .flexbox__item {
   }
-  .flexbox__item:nth-child(1) {
-    flex-basis: calc(25% - 15px);
-  }
+
   .flexbox__item:nth-child(2),
   .flexbox__item:nth-child(4),
   .flexbox__item:nth-child(9) {
-    flex-basis: calc(50% - 0.5rem);
+    flex-basis: calc(41% - 0.5rem);
   }
 
   .flexbox__item:nth-child(1),
@@ -75,7 +78,7 @@
   }
   .flexbox__item:nth-child(2) {
     order: 2;
-    flex-basis: calc(68% - 0.5rem);
+    flex-basis: calc(66% - 0.5rem);
   }
   .flexbox__item:nth-child(3) {
     order: 3;
@@ -83,7 +86,7 @@
   /* KAN */
   .flexbox__item:nth-child(4) {
     order: 7;
-    flex-basis: calc(60% - 0.5rem);
+    flex-basis: calc(58% - 0.5rem);
   }
   .flexbox__item:nth-child(5) {
     order: 6;
@@ -99,7 +102,7 @@
   }
   .flexbox__item:nth-child(9) {
     order: 8;
-    flex-basis: calc(60% - 0.5rem);
+    flex-basis: calc(58% - 0.5rem);
   }
 }
 @media screen and (min-width: 1024px) {

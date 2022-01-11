@@ -1,11 +1,9 @@
 @charset "UTF-8";
 .css-grid__container {
   display: grid;
-  gap: 0.1rem;
-  text-align: center;
-  text-transform: uppercase;
-  grid-template-rows: repeat(14, 3rem);
-  grid-template-columns: repeat(4, calc((100% - 4 * 1rem) / 3.5));
+  gap: 0.3rem;
+  grid-template-rows: repeat(14, 4rem);
+  grid-template-columns: repeat(4, calc((100% - 4 * 1rem) / 3.4));
   grid-template-areas:
     "du du du du"
     "kan kan kan kan"
@@ -21,6 +19,13 @@
 }
 .css-grid__item {
   display: grid;
+  text-align: center;
+  text-transform: uppercase;
+}
+.css-grid__item--shadow {
+  box-shadow: var(--clr6);
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .css-grid__item:nth-child(1) {
