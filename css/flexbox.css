@@ -5,12 +5,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   text-transform: uppercase;
-  text-align: center;
 }
 /* Ändrar items storlek */
 .flexbox__container > div {
-  padding: 1.1rem 0;
-  margin: 3px;
+  padding: 15px;
+  margin: 2.6px;
 }
 
 .flexbox__item {
@@ -39,7 +38,6 @@
 .flexbox__item--shadow {
   box-shadow: var(--clr7);
   font-size: 2rem;
-  font-weight: 600;
 }
 
 /* Ändrar storlek på flexbox items  */
@@ -50,16 +48,15 @@
     flex-direction: row;
   }
 
-  .flexbox__container > div {
-    padding: 1rem;
-  }
   .flexbox__item {
   }
-
+  .flexbox__item:nth-child(1) {
+    flex-basis: calc(25% - 15px);
+  }
   .flexbox__item:nth-child(2),
   .flexbox__item:nth-child(4),
   .flexbox__item:nth-child(9) {
-    flex-basis: calc(41% - 0.5rem);
+    flex-basis: calc(50% - 0.5rem);
   }
 
   .flexbox__item:nth-child(1),
@@ -78,7 +75,7 @@
   }
   .flexbox__item:nth-child(2) {
     order: 2;
-    flex-basis: calc(66% - 0.5rem);
+    flex-basis: calc(67% - 0.5rem);
   }
   .flexbox__item:nth-child(3) {
     order: 3;
@@ -86,7 +83,7 @@
   /* KAN */
   .flexbox__item:nth-child(4) {
     order: 7;
-    flex-basis: calc(58% - 0.5rem);
+    flex-basis: calc(59% - 0.5rem);
   }
   .flexbox__item:nth-child(5) {
     order: 6;
@@ -102,29 +99,29 @@
   }
   .flexbox__item:nth-child(9) {
     order: 8;
-    flex-basis: calc(58% - 0.5rem);
+    flex-basis: calc(59% - 0.5rem);
   }
 }
 @media screen and (min-width: 1024px) {
   .flexbox__item:nth-child(1) {
-    border-radius: 50px 0 0 0;
+    border-radius: 60px 0 0 0;
     border-color: hsl(182, 52%, 42%) !important;
-    border-top: solid 20px;
-    border-left: solid 20px;
+    border-top: solid 25px;
+    border-left: solid 25px;
   }
   .flexbox__item:nth-child(9) {
-    border-radius: 0 0 50px 0;
+    border-radius: 0 0 80px 0;
     border-color: hsl(182, 52%, 42%) !important;
-    border-bottom: solid 30px;
+    border-bottom: solid 25px;
     border-right: solid 31px;
   }
   .flexbox__item:nth-child(2) {
-    flex-basis: calc(70% - 0.5rem);
+    flex-basis: calc(68% - 0.5rem);
   }
 
   .flexbox__item:nth-child(4) {
     order: 4;
-    flex-basis: calc(58% - 0.5rem);
+    flex-basis: calc(56% - 0.5rem);
   }
   .flexbox__item:nth-child(5) {
     order: 5;
@@ -140,7 +137,7 @@
   }
   .flexbox__item:nth-child(9) {
     order: 8;
-    flex-basis: calc(58% - 0.5rem);
+    flex-basis: calc(56% - 0.5rem);
   }
   .flexbox__item:nth-child(1) {
     flex-basis: calc(25% - 15px);
