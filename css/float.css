@@ -6,6 +6,7 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  font-weight: 700;
 }
 .divider {
   clear: both;

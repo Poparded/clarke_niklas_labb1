@@ -153,12 +153,12 @@
   .css-grid__item:nth-child(5) {
     border-radius: 30px 0 0 0;
 
-    border-top: 20px solid hsl(182, 52%, 42%);
-    border-left: 20px solid hsl(182, 52%, 42%);
+    border-top: 17px solid hsl(182, 52%, 42%);
+    border-left: 17px solid hsl(182, 52%, 42%);
   }
   .css-grid__item:nth-child(14) {
     border-radius: 0 0 40px 0;
-    border-bottom: solid 20px hsl(182, 52%, 42%);
-    border-right: solid 20px hsl(182, 52%, 42%);
+    border-bottom: solid 17px hsl(182, 52%, 42%);
+    border-right: solid 17px hsl(182, 52%, 42%);
   }
 }

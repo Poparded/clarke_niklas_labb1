@@ -9,8 +9,14 @@
 }
 /* Ändrar items storlek */
 .flexbox__container > div {
-  padding: 15px;
+  padding: 35px;
+
   margin: 2.6px;
+}
+.flexbox__item:nth-child(2),
+.flexbox__item:nth-child(4),
+.flexbox__item:nth-child(9) {
+  padding: 15px;
 }
 
 .flexbox__item {
@@ -29,6 +35,7 @@
 .flexbox__item:nth-child(4) {
   background-color: var(--clr4);
 }
+
 .flexbox__item:nth-child(6),
 .flexbox__item:nth-child(8) {
   background-color: var(--clr2);
@@ -104,15 +111,20 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  .flexbox__container > div {
+    padding: 30px;
+    margin: 2.6px;
+  }
+
   .flexbox__item:nth-child(1) {
     border-radius: 60px 0 0 0;
-    border-top: solid 25px hsl(182, 52%, 42%);
-    border-left: solid 25px hsl(182, 52%, 42%);
+    border-top: solid 30px hsl(182, 52%, 42%);
+    border-left: solid 28px hsl(182, 52%, 42%);
   }
   .flexbox__item:nth-child(9) {
-    border-radius: 0 0 80px 0;
-    border-bottom: solid 25px hsl(182, 52%, 42%);
-    border-right: solid 31px hsl(182, 52%, 42%);
+    border-radius: 0 0 90px 0;
+    border-bottom: solid 35px hsl(182, 52%, 42%);
+    border-right: solid 40px hsl(182, 52%, 42%);
   }
   .flexbox__item:nth-child(2) {
     flex-basis: calc(68% - 0.5rem);
@@ -120,13 +132,15 @@
 
   .flexbox__item:nth-child(4) {
     order: 4;
-    flex-basis: calc(56% - 0.5rem);
+    flex-basis: calc(66% - 0.5rem);
   }
   .flexbox__item:nth-child(5) {
     order: 5;
+    flex-basis: calc(14% - 0.5rem);
   }
   .flexbox__item:nth-child(6) {
     order: 6;
+    flex-basis: calc(20% - 0.5rem);
   }
   .flexbox__item:nth-child(7) {
     order: 8;
@@ -141,20 +155,18 @@
   .flexbox__item:nth-child(1) {
     flex-basis: calc(25% - 15px);
   }
-  /*  .flexbox__item:nth-child(2),
-  .flexbox__item:nth-child(4),
-  .flexbox__item:nth-child(9) {
-    flex-basis: calc(50% - 0.5rem);
-  } */
 
   .flexbox__item:nth-child(1),
   .flexbox__item:nth-child(3),
-  .flexbox__item:nth-child(5),
   .flexbox__item:nth-child(7) {
     flex-basis: calc(16% - 0.5rem);
   }
-  .flexbox__item:nth-child(6),
   .flexbox__item:nth-child(8) {
     flex-basis: calc(28% - 0.5rem);
+  }
+  .flexbox__item:nth-child(7),
+  .flexbox__item:nth-child(8),
+  .flexbox__item:nth-child(9) {
+    padding: 10px;
   }
 }
