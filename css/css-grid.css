@@ -158,8 +158,7 @@
   }
   .css-grid__item:nth-child(14) {
     border-radius: 0 0 40px 0;
-    border-color: hsl(182, 52%, 42%) !important;
-    border-bottom: solid 20px;
-    border-right: solid 20px;
+    border-bottom: solid 20px hsl(182, 52%, 42%);
+    border-right: solid 20px hsl(182, 52%, 42%);
   }
 }
