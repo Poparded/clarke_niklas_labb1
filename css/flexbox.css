@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  text-align: center;
   text-transform: uppercase;
 }
 /* Ändrar items storlek */
@@ -105,15 +106,13 @@
 @media screen and (min-width: 1024px) {
   .flexbox__item:nth-child(1) {
     border-radius: 60px 0 0 0;
-    border-color: hsl(182, 52%, 42%) !important;
-    border-top: solid 25px;
-    border-left: solid 25px;
+    border-top: solid 25px hsl(182, 52%, 42%);
+    border-left: solid 25px hsl(182, 52%, 42%);
   }
   .flexbox__item:nth-child(9) {
     border-radius: 0 0 80px 0;
-    border-color: hsl(182, 52%, 42%) !important;
-    border-bottom: solid 25px;
-    border-right: solid 31px;
+    border-bottom: solid 25px hsl(182, 52%, 42%);
+    border-right: solid 31px hsl(182, 52%, 42%);
   }
   .flexbox__item:nth-child(2) {
     flex-basis: calc(68% - 0.5rem);
